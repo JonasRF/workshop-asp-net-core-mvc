@@ -4,17 +4,17 @@ using System.Linq;
 
 namespace SalesWebMVC.Models
 {
-    public class Departament
+    public class Department
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public ICollection<Seller> sellers { get; set; } = new List<Seller>();
 
-        public Departament()
+        public Department()
         {
         }
 
-        public Departament(int id, string name)
+        public Department(int id, string name)
         {
             Id = id;
             Name = name;
