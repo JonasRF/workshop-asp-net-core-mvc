@@ -36,7 +36,7 @@ namespace SalesWebMVC.Models
 
         public void RemoveSales(SalesRecord sr)
         {
-            sales.Add(sr);
+            sales.Remove(sr);
         }
 
         public double TotalSales(DateTime initial, DateTime final)
